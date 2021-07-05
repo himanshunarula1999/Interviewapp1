@@ -108,5 +108,5 @@ function messageReceived(data){
 	}	
 }
 
-server.listen(5000,httpServerConnected );
+server.listen(process.env.PORT || 5000 , httpServerConnected );
 io.on('connection', ioServerConnected);
