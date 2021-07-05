@@ -425,44 +425,44 @@
     -->
 
    <script>
-      // function MyUser(){
-      //    var x = document.getElementById("userName").value;
-      //    var i = "Interviewer";
-      //    if(x != i){
-      //       $(document).ready(function () {
+       function MyUser(){
+          var x = document.getElementById("userName").value;
+          var i = "Interviewer";
+          if(x != i){
+             $(document).ready(function () {
          
-      //       var count_nav = 0;
-      //       $(".editor-wrapper").keydown(function(event) {
-      //          if (event.ctrlKey==true && (event.which == '86'
-      //          || event.which == '67' || event.which == '88')) {
-      //             swal({
-      //                title: "Warning",
-      //                text: "cut. copy. paste. not allowed!!",
-      //                icon: "error",
-      //                button: "Ok",
-      //             });
-      //             event.preventDefault();
-      //          }
-      //       });
-      //       //Disable mouse right click
-      //       $(".editor-wrapper").on("contextmenu",function(e){
-      //          return false;
-      //       });
-      //       $(window).blur(function() {
-      //          count_nav++;
-      //          swal({
-      //             title: "Navigation Warning",
-      //             text: `Don't Switch from this tab!! ${count_nav} / 5 ` ,
-      //             icon: "warning",
-      //             button: "Ok",
-      //          });
-      //          if(count_nav >= 5){
-      //             myFunction();
-      //          }
-      //       });
-      //       });
-      //    }
-      // }
+             var count_nav = 0;
+             $(".editor-wrapper").keydown(function(event) {
+                if (event.ctrlKey==true && (event.which == '86'
+                || event.which == '67' || event.which == '88')) {
+                   swal({
+                      title: "Warning",
+                      text: "cut. copy. paste. not allowed!!",
+                      icon: "error",
+                      button: "Ok",
+                   });
+                   event.preventDefault();
+                }
+             });
+             //Disable mouse right click
+             $(".editor-wrapper").on("contextmenu",function(e){
+                return false;
+             });
+             $(window).blur(function() {
+                count_nav++;
+                swal({
+                   title: "Navigation Warning",
+                   text: `Don't Switch from this tab!! ${count_nav} / 5 ` ,
+                   icon: "warning",
+                   button: "Ok",
+                });
+                if(count_nav >= 5){
+                   myFunction();
+                }
+             });
+             });
+          }
+       }
       function openForm() {
          document.getElementById("myForm").style.display = "block";
       }
