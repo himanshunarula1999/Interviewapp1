@@ -1,0 +1,64 @@
+.controller{
+    width: 75rem;
+    margin-bottom: 5px;
+    /* height: 5rem; */
+    position:fixed;
+    z-index: 5;
+    /* bottom: 0px; */
+    margin-top: 3rem;
+    /* margin-left: 15px; */
+    /* left: 20px; */
+    
+}
+.screens{
+    position: fixed;
+    right: 0px;
+    top:0px;
+    display: flex;
+    flex-direction: column;
+    width: 336px;
+    height: 500px;
+    /* background-color: #66A5Ad; */
+}
+.chatter{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 336px;
+    height: 253px;
+    border-radius: 5%;
+}
+
+.open-button {
+    background-color: #003b46;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 40%;
+    /* opacity: 1; */
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    width: 100px;
+  }
+
+  .chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  .cancel{
+    right: 0px;
+    /* margin-left: 21rem; */
+    position: absolute;
+  }
